@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Kubirub
+        </title>
+      
+        <meta charset="utf-8">
+       <link rel="stylesheet" type="text/css" href="css/kubirub.css">
+        
+
+        <script src="  https://yastatic.net/lodash/4.10.0/lodash.core.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>       
+
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"> 
+    
+    
+    </head>
+    <body >
+      <header>
+
+    <div class="container-fluid all">
+      <div class="row">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+       
+        <div class="navbar-header">
+            <button style="border-color:rgba(225,225,225,1);" type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="kubirub.html" id="home" class="home navbar-brand"> <img class="home" id="home" style="width: 70px; height: 70px;" src="uploads/logo.png"></a>
+        </div>
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul  class="nav navbar-nav">
+                 <li class="nav-item">
+              <a ng-click='scores' style="text-align: center;" id="scores" class=" scores nav-link" >SCORES</a>
+            </li>
+            <li class="nav-item">
+              <a ng-click='discover' style="text-align:center;" id="discover" class="discover nav-link">DISCOVER</a>
+            </li>
+            <li class="nav-item">
+              <a style="text-align:center;" id="about" class="about nav-link" >ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a style="text-align:center; " id="form" class="form nav-link" >COMPANY PROFILE</a>
+            </li>
+            <li class="nav-item">
+              <a style="text-align:center; " id="contact" class="contact nav-link" ">CONTACT</a>
+            </li> 
+            <li class="nav-item">
+              <a style="text-align:center; " id="privacy" class="privacy nav-link" ">PRIVACY POLICY</a>
+            </li> 
+            </ul>
+            
+            
+        </div>
+    </nav>
+
+</div>
+<hr>
+</div>                   
+       
+      </header>
+
+
+<section id="home" class="home">
+  <div class="container">
+    <div class="main col-md-8">
+  <h1 style="color:white;
+
+font-family: 'Open Sans Condensed', sans-serif; font-weight: 800; font-size: 45px;">Here is a superb mobile game for you,</h1>
+
+
+<p style="color:white; font-size:35px; font-family: 'Open Sans Condensed', sans-serif;">Just install our app and <span style="font-size:40px; font-weight: 800; font-size: 45px;font-family: 'Open Sans Condensed', sans-serif;">change your approach!</span> </p>
+<button style="border-radius:20px; font-weight: 800; font-size: 25px;font-family: 'Open Sans Condensed', sans-serif; background-color: white; display:table; margin:50px auto; margin-top: 50px;padding: 0px 40px 0px 40px;" id="download">Download</button>
+</div>
+<div class="col-md-3 phone visible-lg visible-md">
+
+  <img style="width: 279px; height: 556px;" src="uploads/ix.png">
+  <a style="display:block; margin-top:-170px;padding-bottom: 10px;text-align: center;" href=""><img  class="topstore stores" src="uploads/astore.png"></a>
+  <a style="display:block;text-align: center;" href=""><img class="bottomstore stores" src="uploads/pstore.png"></a>
+</div>
+<div class="col-md-1 visible-lg visible-md">
+  <a class="linkedin" href="#">
+   <svg class="svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path></svg></a>
+
+  <a class="twitter" href="#"> <svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
+
+ <a class="facebook" href="#"> <svg class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" data-fa-i2svg=""><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg></a>
+</div>
+<hr class="visible-md visible-lg">
+<hr class="hidden-lg hidden-md" style="margin-top: 300px">
+
+<div class="container visible-lg visible-md">
+<div class="row footer">
+  
+  <div style="font-size: 20px; color: #0A7BEB;" class="col-md-4 left"><p>All rights <span style="color: white;">reserved</span></p> </div>
+  <div style="font-size:20px;color: #0A7BEB;" class="col-md-4 center"><p>Product by <span ><a style="color:white;" href="http://teching.co"> Teching</a></span></p> </div>
+  <div style="font-size: 20px;color: #0A7BEB;" class="col-md-4 right"> <p>Baku <span style="color:white;">2018</span></p></div>
+
+</div>
+</div>
+
+<div class="container col-xs-12 hidden-md hidden-lg">
+<div class="row footer">
+  
+  <div  style="font-size: 20px; color: #0A7BEB;" class="col-xs-4 left"><p>All rights <span style="color: white;">reserved</span></p> </div>
+  <div style="font-size:20px;color: #0A7BEB;" class="col-xs-4 center"><p>Product by <span ><a style="color:white;" href="http://teching.co"> Teching</a></span></p> </div>
+  <div style="font-size: 20px;color: #0A7BEB;" class="col-xs-4 right"> <p>Baku <span style="color:white;">2018</span></p></div>
+
+</div>
+</div>
+
+</section>
+
+
+
+
+
+<section id="scores" class="scores">
+  <div class="container">
+    <div class="col-md-8">
+   <h1 style="color:white;">404 NOT FOUND</h1><br>
+   <p style="color:white;">This page is activate coming soon.</p>
+ </div>
+   <div class="col-md-3 phone visible-lg visible-md">
+
+  <img style="width: 279px; height: 556px;" src="uploads/ix.png">
+  <a style="display:block; margin-top:-170px;padding-bottom: 10px;text-align: center;" href=""><img class="topstore stores" src="uploads/astore.png"></a>
+  <a style="display:block; text-align: center;" href=""><img class="bottomstore stores" src="uploads/pstore.png"></a>
+</div>
+<div class="col-md-1 visible-lg visible-md">
+
+  <a class="linkedin" href="#">
+   <svg class="svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path></svg></a>
+
+  <a class="twitter" href="#"> <svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
+
+ <a class="facebook" href="#"> <svg class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" data-fa-i2svg=""><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg></a>
+</div>
+<hr class="visible-md visible-lg">
+<hr class="hidden-lg hidden-md" style="margin-top: 300px">
+
+<div class="container visible-lg visible-md">
+<div class="row footer">
+  
+  <div style="font-size: 20px; color: #0A7BEB;" class="col-md-4 left"><p>All rights <span style="color: white;">reserved</span></p> </div>
+  <div style="font-size:20px;color: #0A7BEB;" class="col-md-4 center"><p>Product by <span ><a style="color:white;" href="http://teching.co"> Teching</a></span></p> </div>
+  <div style="font-size: 20px;color: #0A7BEB;" class="col-md-4 right"> <p>Baku <span style="color:white;">2018</span></p></div>
+
+</div>
+</div>
+
+<div class="container col-xs-12 hidden-md hidden-lg">
+<div class="row footer">
+  
+  <div  style="font-size: 20px; color: #0A7BEB;" class="col-xs-4 left"><p>All rights <span style="color: white;">reserved</span></p> </div>
+  <div style="font-size:20px;color: #0A7BEB;" class="col-xs-4 center"><p>Product by <span ><a style="color:white;" href="http://teching.co"> Teching</a></span></p> </div>
+  <div style="font-size: 20px;color: #0A7BEB;" class="col-xs-4 right"> <p>Baku <span style="color:white;">2018</span></p></div>
+
+</div>
+</div>
+
+</section>
+
+<section id="discover" class="discover">
+  <div class="container">
+    <div class="col-md-8">
+   <h1 style="color:white;">404 NOT FOUND</h1><br>
+   <p style="color:white;">This page is activate coming soon.</p>
+ </div>
+   <div class="col-md-3 phone visible-lg visible-md">
+
+  <img style="width: 279px; height: 556px;" src="uploads/ix.png">
+  <a style="display:block; margin-top:-170px;padding-bottom: 10px;text-align: center;" href=""><img class="topstore stores" src="uploads/astore.png"></a>
+  <a style="display:block; text-align: center;" href=""><img class="bottomstore stores" src="uploads/pstore.png"></a>
+</div>
+<div class="col-md-1 visible-lg visible-md">
+
+  <a class="linkedin" href="#">
+   <svg class="svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path></svg></a>
+
+  <a class="twitter" href="#"> <svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
+
+ <a class="facebook" href="#"> <svg class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" data-fa-i2svg=""><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg></a>
+</div>
+<hr class="visible-md visible-lg">
+<hr class="hidden-lg hidden-md" style="margin-top: 300px">
+
+<div class="container visible-lg visible-md">
+<div class="row footer">
+  
+  <div style="font-size: 20px; color: #0A7BEB;" class="col-md-4 left"><p>All rights <span style="color: white;">reserved</span></p> </div>
+  <div style="font-size:20px;color: #0A7BEB;" class="col-md-4 center"><p>Product by <span ><a style="color:white;" href="http://teching.co"> Teching</a></span></p> </div>
+  <div style="font-size: 20px;color: #0A7BEB;" class="col-md-4 right"> <p>Baku <span style="color:white;">2018</span></p></div>
+
+</div>
+</div>
+
+<div class="container col-xs-12 hidden-md hidden-lg">
+<div class="row footer">
+  
+  <div  style="font-size: 20px; color: #0A7BEB;" class="col-xs-4 left"><p>All rights <span style="color: white;">reserved</span></p> </div>
+  <div style="font-size:20px;color: #0A7BEB;" class="col-xs-4 center"><p>Product by <span ><a style="color:white;" href="http://teching.co"> Teching</a></span></p> </div>
+  <div style="font-size: 20px;color: #0A7BEB;" class="col-xs-4 right"> <p>Baku <span style="color:white;">2018</span></p></div>
+
+</div>
+</div>
+
+</section>
+
+
+
+<section id="about" class="about">
+   <div class="container">
+    <div class="col-md-8">
+   <h1 style="color:white;font-family: 'Open Sans Condensed', sans-serif;font-weight: 800; font-size: 55px;">WHAT IS KUBIRUB</h1><br>
+   <p style="color:white;font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">“KubiRub” (familiar to us as Rubik`s cube hand toy) will be launched as a 3D mobile game. Users can enjoy not only playing and relaxing, but also obtain bonuses and discounts from different companies. The mobile game is based on the main principle of Rubik`s cube but the faces of cubes consist of logos of companies instead of colors.</p>
+ </div>
+  <div class="col-md-3 phone visible-lg visible-md">
+
+  <img style="width: 279px; height: 556px;" src="uploads/ix.png">
+  <a style="display:block; margin-top:-170px;padding-bottom: 10px;text-align: center;" href=""><img class="topstore stores" src="uploads/astore.png"></a>
+  <a style="display:block; text-align: center;" href=""><img class="bottomstore stores" src="uploads/pstore.png"></a>
+</div>
+<div class="col-md-1 visible-md visible-lg">
+  <a class="linkedin" href="#">
+   <svg class="svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path></svg></a>
+
+  <a class="twitter" href="#"> <svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
+
+ <a class="facebook" href="#"> <svg class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" data-fa-i2svg=""><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg></a>
+</div>
+<hr class="visible-md visible-lg">
+<hr class="hidden-lg hidden-md" style="margin-top: 300px">
+
+<div class="container visible-lg visible-md">
+<div class="row footer">
+  
+  <div style="font-size: 20px; color: #0A7BEB;" class="col-md-4 left"><p>All rights <span style="color: white;">reserved</span></p> </div>
+  <div style="font-size:20px;color: #0A7BEB;" class="col-md-4 center"><p>Product by <span ><a style="color:white;" href="http://teching.co"> Teching</a></span></p> </div>
+  <div style="font-size: 20px;color: #0A7BEB;" class="col-md-4 right"> <p>Baku <span style="color:white;">2018</span></p></div>
+
+</div>
+</div>
+
+<div class="container col-xs-12 hidden-md hidden-lg">
+<div class="row footer">
+  
+  <div  style="font-size: 20px; color: #0A7BEB;" class="col-xs-4 left"><p>All rights <span style="color: white;">reserved</span></p> </div>
+  <div style="font-size:20px;color: #0A7BEB;" class="col-xs-4 center"><p>Product by <span ><a style="color:white;" href="http://teching.co"> Teching</a></span></p> </div>
+  <div style="font-size: 20px;color: #0A7BEB;" class="col-xs-4 right"> <p>Baku <span style="color:white;">2018</span></p></div>
+
+</div>
+</div>
+
+</section>
+
+
+  
+<section id="form" class="form" style="margin-top:40px; background-color: white;">
+  <div class="container">
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend style="color: #10559b; font-weight: 800; font-size:40px;font-family: 'Open Sans Condensed', sans-serif;">Sign Up</legend>
+
+<div style="margin-top:40px;" class="row">
+<!-- File Button --> 
+<div class="form-group col-md-3">
+  <label style=" color: #10559b;" class="col-md-6 control-label" for="filebutton"><img style="width: 100px; height: 90px;" src="uploads/image_icon.png"></label>
+  <div class="col-md-6">
+    <input style="visibility: hidden;" id="filebutton" name="filebutton" class="input-file" type="file"><br>
+   
+  </div>
+   <p class="col-md-5" style="color: #10559b; font-weight: 30px;">Upload Your Company Logo (click to icon)</p>
+</div>
+
+<!-- Text input-->
+<div class="col-md-9">
+<div class="col-md-6">
+<div class="form-group">
+  <label style="color: #10559b; font-weight: bold; font-size:16px;" class="col-md-5 control-label" for="textinput">First Name</label>  
+  <div class="col-md-8">
+  <input id="textinput" style="background-color:#f1f2f6; border-radius:20px;" name="textinput" placeholder="ENTER YOUR FIRST NAME" class="form-control input-md" type="text">
+  <span class="-block"></span>  
+  </div>
+</div>
+<div class="form-group">
+  <label style="color: #10559b; font-weight: bold; font-size:16px;" class="col-md-5 control-label" for="textinput">Surname</label>  
+  <div class="col-md-8">
+  <input id="textinput" style="background-color:#f1f2f6; border-radius:20px;" name="textinput" placeholder="ENTER YOUR SURNAME" class="form-control input-md" type="text">
+  <span class="-block"></span>  
+  </div>
+</div>
+<div class="form-group">
+  <label style="color: #10559b; font-weight: bold; font-size:16px;" class="col-md-5 control-label" for="textinput">E-mail</label>  
+  <div class="col-md-8">
+  <input id="textinput" style="background-color:#f1f2f6; border-radius:20px;" name="textinput" placeholder="ENTER YOUR CORPARATE E-MAIL" class="form-control input-md" type="text">
+  <span class="-block"></span>  
+  </div>
+</div>
+<div class="form-group">
+  <label style="color: #10559b; font-weight: bold; font-size:16px;" class="col-md-5 control-label" for="textinput">Your Position</label>  
+  <div class="col-md-8">
+  <input id="textinput" style="background-color:#f1f2f6; border-radius:20px;" name="textinput" placeholder="WRITE YOUR POSITION" class="form-control input-md" type="text">
+  <span class="-block"></span>  
+  </div>
+</div>
+<div class="form-group">
+  <label style="color: #10559b; font-weight: bold; font-size:16px;" class="col-md-5 control-label" for="textinput">Password</label>  
+  <div class="col-md-8">
+  <input id="textinput" style="background-color:#f1f2f6; border-radius:20px;" name="textinput" placeholder="ENTER YOUR PASSWORD" class="form-control input-md" type="text">
+  <span class="-block"></span>  
+  </div>
+</div>
+<div class="form-group">
+  <label style="color: #10559b; font-weight: bold; font-size:16px;" class="col-md-5 control-label" for="textinput">Confirm Password</label>  
+  <div class="col-md-8">
+  <input id="textinput" style="background-color:#f1f2f6; border-radius:20px;" name="textinput" placeholder="CONFIRM YOUR PASSWORD" class="form-control input-md" type="text">
+  <span class="-block"></span>  
+  </div>
+</div>
+</div>
+<!-- Text input-->
+<div class="col-md-6">
+<div class="form-group">
+  <label style="color: #10559b; font-weight: bold; font-size:16px;" class="col-md-5 control-label" for="textinput">Country</label>  
+  <div class="col-md-8">
+  <input id="textinput" style="background-color:#f1f2f6; border-radius:20px;" name="textinput" placeholder="SELECT YOUR COUNTRY" class="form-control input-md" type="text">
+  <span class="-block"></span>  
+  </div>
+</div>
+<div class="form-group">
+  <label style="color: #10559b; font-weight: bold; font-size:16px;" class="col-md-5 control-label" for="textinput">City</label>  
+  <div class="col-md-8">
+  <input id="textinput" style="background-color:#f1f2f6; border-radius:20px;" name="textinput" placeholder="SELECT YOUR CITY" class="form-control input-md" type="text">
+  <span class="-block"></span>  
+  </div>
+</div>
+<div class="form-group">
+  <label style="color: #10559b; font-weight: bold; font-size:16px;" class="col-md-5 control-label" for="textinput">Company</label>  
+  <div class="col-md-8">
+  <input id="textinput" style="background-color:#f1f2f6; border-radius:20px;" name="textinput" placeholder="ENTER YOUR COMPANY NAME" class="form-control input-md" type="text">
+  <span class="-block"></span>  
+  </div>
+</div>
+<div class="form-group">
+  <label style="color: #10559b; font-weight: bold; font-size:16px;" class="col-md-5 control-label" for="textinput">Product</label>  
+  <div class="col-md-8">
+  <input id="textinput" style="background-color:#f1f2f6; border-radius:20px;" name="textinput" placeholder="ENTER YOUR PRODUCT NAME" class="form-control input-md" type="text">
+  <span class="-block"></span>  
+  </div>
+</div>
+<div class="form-group">
+  <label style="color: #10559b; font-weight: bold; font-size:16px;" class="col-md-5 control-label" for="textinput">Bussines Sector</label>  
+  <div class="col-md-8">
+  <input id="textinput" style="background-color:#f1f2f6; border-radius:20px;" name="textinput" placeholder="ENTER YOUR COMPANY NAME" class="form-control input-md" type="text">
+  <span class="-block"></span>  
+  </div>
+</div>
+<div class="form-group">
+  <label style="color: #10559b; font-weight: bold; font-size:16px;" class="col-md-5 control-label" for="textinput">Your Phone</label>  
+  <div class="col-md-8">
+  <input  id="textinput" style="background-color:#f1f2f6; border-radius:20px;" name="textinput" placeholder="ENTER YOUR PHONE" class="form-control input-md" type="text">
+  <span class="-block"></span>  
+  </div>
+</div>
+</div>
+</div>
+<!-- Textarea -->
+<div class="form-group">
+ 
+  <div class="col-md-12">                     
+    <textarea style="background-color: #f1f2f6; padding-bottom: 50px;" class="form-control" id="textarea" name="ENTER YOUR COMPANY'S MISSION & IMPRESSIUM">ENTER YOUR COMPANY'S MISSION & IMPRESSIUM</textarea>
+  </div>
+
+
+</div>
+<div class="form-group">
+  
+  <div class="col-md-8 col-xs-12" >
+    <div style="text-align:right;" class="col-xs-6">
+    <button style=" background-color: #0084ff; font-size: 20px; border-color: #0084ff; padding: 0px 30px 0px 30px; border-radius: 20px;"  name="button1id" class="btn btn-success">Save</button></div>
+    <div class="col-xs-6">
+    <button style="border-radius: 20px; font-size: 20px; padding: 0px 30px 0px 30px;background-color: #b8bdd0; border-color: #b8bdd0;"  name="button2id" class="btn btn-danger">Cancel</button></div>
+  </div>
+</div>
+
+</div>
+</fieldset>
+</form>
+</div>
+
+</section>
+
+
+<section id="privacy" class="contact">
+  <div class="col-md-5" style="margin-right: 30px;">
+
+  <div class="form-group">
+  <label class="col-md-6 control-label" for="textinput"></label>  
+  <div class="col-md-6">
+  <input style="margin-bottom: 10px;" id="textinput" name="textinput" placeholder="ENTER YOUR NAME" class="form-control input-md" type="text">
+  <span class="-block"></span>  
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-6 control-label" for="textinput"></label>  
+  <div class="col-md-6">
+  <input style="margin-bottom: 10px;" id="textinput" name="textinput" placeholder="ENTER YOUR SURNAME" class="form-control input-md" type="text">
+  <span class="-block"></span>  
+  </div>
+  <div class="form-group">
+  <label class="col-md-6 control-label" for="textinput"></label>  
+  <div class="col-md-6">
+  <input style="margin-bottom: 10px;" id="textinput" name="textinput" placeholder="YOUR MAIL ADRESS" class="form-control input-md" type="text">
+  <span class="-block"></span>  
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-6 control-label" for="textinput"></label>  
+  <div class="col-md-6">
+  <input style="margin-bottom: 10px;" id="textinput" name="textinput" placeholder="TOPIC" class="form-control input-md" type="text">
+  <span class="-block"></span>  
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-6 control-label" for="textarea"></label>
+  <div class="col-md-6">                     
+    <textarea class="form-control" id="textarea" name="ENTER YOUR COMPANY'S MISSION & IMPRESSIUM">TEXT..</textarea>
+  </div>
+</div>
+</div>
+<div style="" class="col-xs-12 col-md-6"></div>
+<button class="col-xs-12 col-md-2" style="color: white; margin-top: 20px; background-color: #0084ff; font-size: 20px; border-color: #0084ff; padding: 0px 30px 0px 30px; border-radius: 20px;"  name="button1id" class="btn btn-success">Save</button></div>
+
+<div class="col-md-2" style="color:white;">
+  <p style="font-size: 15px;">
+  Azadlig ave.20.Baku,Azerbaijan<br>
+Postal Code: AZ1010<br>
++994 55 753 19 35<br>
+support@kubirub.online
+</p>
+</div>
+</div>
+
+
+
+<div class="col-md-3 phone visible-lg visible-md">
+
+  <img style="width: 279px; height: 556px;" src="uploads/ix.png">
+  <a style="display:block; margin-top:-170px;padding-bottom: 10px;text-align: center;" href=""><img class="topstore stores" src="uploads/astore.png"></a>
+  <a style="display:block; text-align: center;" href=""><img class="bottomstore stores" src="uploads/pstore.png"></a>
+</div>
+<div class="col-md-1 visible-lg visible-md">
+ 
+  <a class="linkedin" href="#">
+   <svg class="svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path></svg></a>
+
+
+  <a class="twitter" href="#"> <svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
+
+
+ <a class="facebook" href="#"> <svg class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" data-fa-i2svg=""><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg></a>
+</div>
+
+
+<div class="container visible-lg visible-md">
+<div class="row footer">
+  
+  <div style="font-size: 20px; color: #0A7BEB;" class="col-md-4 left"><p>All rights <span style="color: white;">reserved</span></p> </div>
+  <div style="font-size:20px;color: #0A7BEB;" class="col-md-4 center"><p>Product by <span ><a style="color:white;" href="http://teching.co"> Teching</a></span></p> </div>
+  <div style="font-size: 20px;color: #0A7BEB;" class="col-md-4 right"> <p>Baku <span style="color:white;">2018</span></p></div>
+
+</div>
+</div>
+
+<div style="margin-top:30px;" class="container col-xs-12 hidden-md hidden-lg">
+<div class="row footer">
+  
+  <div  style="font-size: 20px; color: #0A7BEB;" class="col-xs-4 left"><p>All rights <span style="color: white;">reserved</span></p> </div>
+  <div style="font-size:20px;color: #0A7BEB;" class="col-xs-4 center"><p>Product by <span ><a style="color:white;" href="http://teching.co"> Teching</a></span></p> </div>
+  <div style="font-size: 20px;color: #0A7BEB;" class="col-xs-4 right"> <p>Baku <span style="color:white;">2018</span></p></div>
+
+</div>
+</div>
+
+</section>
+
+ 
+
+
+
+
+
+
+<section id="privacy" class="privacy"> <div class="container">
+    <div class="col-md-8">
+   <h1 style="color:white;font-family: 'Open Sans Condensed', sans-serif;font-weight: 800; font-size: 55px;">Privacy Policy</h1><br>
+   <p style="color:white;font-family: 'Open Sans Condensed', sans-serif; font-size: 20px">Effective date: July 09, 2018<br style="margin-bottom:20px;">
+
+Teching ("us", "we", or "our") operates the http://kubirub.online/ website and the Kubirub mobile application (the "Service").<br style="margin-bottom:20px;">
+
+This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.<br style="margin-bottom:20px;"><br style="margin-bottom:20px;">
+
+We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions. <a href="http://kubirub.online/privacy-policy.html">read more</a></p>
+ </div>
+  <div class="col-md-3 phone visible-lg">
+
+  <img style="width: 279px; height: 556px;" src="uploads/ix.png">
+  <a style="display:block; margin-top:-170px;padding-bottom: 10px;text-align: center;" href=""><img class="topstore stores" src="uploads/astore.png"></a>
+  <a style="display:block;text-align: center;" href=""><img class="bottomstore stores" src="uploads/pstore.png"></a>
+</div>
+
+<div class="col-md-1 visible-lg">
+  
+  <a class="linkedin" href="#">
+   <svg class="svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path></svg></a>
+<div class="col-xs-4">
+  <a class="twitter" href="#"> <svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
+
+ <a class="facebook" href="#"> <svg class="svg-inline--fa fa-facebook-f fa-w-9" aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" data-fa-i2svg=""><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg></a>
+</div>
+
+</section>
+
+
+    </body>
+
+<script>
+  $("#home").click(() => { $("section").hide(); $(".home").show()  }) 
+ $("#scores").click(() => { $("section").hide(); $(".scores").show()  }) 
+ $("#discover").click(() => { $("section").hide(); $(".discover").show()  }) 
+ $("#about").click(() => { $("section").hide(); $(".about").show()  }) 
+ $("#form").click(() => { $("section").hide(); $(".form").show()  })
+  $("#contact").click(() => { $("section").hide(); $(".contact").show()  })
+   $("#privacy").click(() => { $("section").hide(); $(".privacy").show()  })
+</script>
+
+</html>

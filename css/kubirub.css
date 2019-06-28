@@ -1,0 +1,58 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+body{
+
+	background-color: #00498d !important;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+ .navbar-brand img{
+ 	margin-left:90px;
+ }
+
+.collapse a{
+ color: white; 
+margin-left: 50px;
+margin-top: 30px;
+font-size: 18px;}
+
+
+h1{color: white;
+font-size: 55px;}
+
+.nav-link:hover{
+	background-color: #2c6499;
+	}
+
+legend{ color: white; }
+	.form-control{
+		padding-left: 30px;
+	}
+	label{ color: white; }
+.phone a img{
+	margin-left:30px;
+	width: 94px;
+	height: 28px;
+}
+ svg a{
+
+ 	margin-left:50px;
+ }
+svg {
+	color: white;
+	margin-bottom: 200px;
+margin-left:50px;
+	width: 40px;
+	height: 40px;
+}
+
+.contact{
+	margin-top: 20px;
+}
+ section:not(.home) { display:none; } 
